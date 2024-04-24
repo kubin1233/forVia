@@ -1,101 +1,95 @@
-<!DOCTYPE html>
 <html>
-<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<link href="https://feeldreams.github.io/sygbanget/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/x-icon" href="https://feeldreams.github.io/main-icon.png">
 
-  <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
-  <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-  
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/maukahkamu/style.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  
 <head>
-<title>Cuma Hadiah Biasa</title>
-<meta name="description" content="HTML Feeldream Repl Co">
+    <title>Script HTML Feeldream Repl Co</title>
 </head>
+
 <body>
-	
-   <div class="overlay">
-     <div class="loading-message">Hai Kindi!<br>Tunggu dulu ya..</div>
-   </div>
 
-   <audio src="https://feeldreams.github.io/maukahkamu/seandainya.mp3" id="linkmp3" class="sembunyi"></audio>
-   
-   <section class="first">
-       <div class="wp"><img id="imgsatu" src="https://feeldreams.github.io/maukahkamu/wpsatu.jpg"/></div>
-       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
-       <h1 class="title">Kin...!</h1>
-       <p class="flip">Aku boleh jujur engga nih? </p>
-       <p class="slide-up"><i>Scroll terus ke bawah ya :)</i></p>
-  </section>
-  
-  <section>
-      <div class="wp"><img id="imgdua" src="https://feeldreams.github.io/maukahkamu/wpdua.jpg"/></div>
-      <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
-      <h2 class="title"><i>Sebenernya..</i></h2>
-      <p class="slide-right">Aku udah ada rasa sama <b class="lingkar">kamu</b> :(</p>
-  </section>
-  
-  <section>
-  	<div class="wp"><img id="imgtiga" src="https://feeldreams.github.io/maukahkamu/wptiga.jpg"/></div>
-      <p id="teksnimasi">Maap kalo mendadak nembak kamu, dan pastinya ini gila soalny kita baru kenal.<br><br><b><i>Kamu Tau?</i></b><br>..<br><br>Aku beneran niat serius sama kamu,walau kita sama sama mulai dari tanpa ada perasaan, tapi aku mohon jadiin aku rumah kedepannya :)</p>
-  </section>
-  
-  <section>
-  	<div class="wp"><img id="imgempat" src="https://feeldreams.github.io/maukahkamu/wpempat.jpg"/></div>
-      <img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
-      <h2 class="title"><i>Intinya,</i></h2>
-      <p class="slide-right"><b>Will you<br>be my girlfriend? </b></p>
-      <div id="Tombol">
-       <a id="By" onClick="fungsimau()">Mau</a>
-       <a id="Bn" onClick="fungsigamau()">Gamau</a>
-     </div>
-  </section>
-  
-  <section id="iniakhir">
-  	<div class="wp" id="wpakhir"><img src="https://feeldreams.github.io/maukahkamu/wplima.jpg"/></div>
-      <img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
-      <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
-      <h1 id="judulakhir"></h1>
-      <p id="kalimatakhir"></p>
-      <p id="palingakhir"></p>
-      <div id="TombolWA">
-       <a onClick="https://t.me/dwarfuks">Balas </a>
-     </div>
-  </section>
-  
-  <div id="initom" class="menu">
-  <a class='tombol' onclick="tes()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
-  </a>
-  </div>
+    <audio src="https://feeldreams.github.io/audio/sygbanget.mp3" id="linkmp3" class="sembunyi"></audio>
 
-<script>
-function fungsimau(){
-       fungsi=0;tes();
-       teksjudulakhir = "Yeayyy! ";
-       tekskalimatakhir = "Makasii udah mau nerima<br>aku jadi pacar kamu, hihi ";
-}
-function fungsigamau(){
-       fungsi=0;tes();
-       teksjudulakhir = "Yahhh ";
-       tekskalimatakhir = "Yaudah kalo kamu gamau,<br>biar aku aja yang jadi<br>pacar kamu, hehe ";
-}
+    <div id="bgbelakang">
+        <img src="" id="wallpaper" />
+    </div>
 
-teksjudulakhir2 = "I Love You";
-tekspalingakhir = "Jangan lupa balas pesan<br>ke Tele aku ya! ";
-  
-pesanwhatsapp = "Aku mau kok jadi pacar kamu ><";
+    <div class="overlay">
+        <div class="loading-message">Harap tunggu...</div>
+    </div>
 
-const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
-</script>
-<script src="https://feeldreams.github.io/maukahkamu/main.js"></script>
+    <div id='Content'>
+
+        <p id="ket">Klik di bawah ya <3</p> <div>
+                <div id="loveIn" class="awalan">
+                    <svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                        <g transform='translate(2.000000, 2.000000)'>
+                            <path
+                                d='M9.27542857,0.714285714 C14.0030476,0.714285714 17.836381,4.54666667 17.836381,9.2752381 C17.836381,14.0038095 14.0030476,17.8361905 9.27542857,17.8361905 C4.54685714,17.8361905 0.71447619,14.0038095 0.71447619,9.2752381 C0.71447619,4.54666667 4.54685714,0.714285714 9.27542857,0.714285714 Z'>
+                            </path>
+                            <path
+                                d='M17.8989524,16.487619 C18.678,16.487619 19.3094286,17.12 19.3094286,17.8980952 C19.3094286,18.6780952 18.678,19.3095238 17.8989524,19.3095238 C17.1199048,19.3095238 16.4875238,18.6780952 16.4875238,17.8980952 C16.4875238,17.12 17.1199048,16.487619 17.8989524,16.487619 Z'>
+                            </path>
+                        </g>
+                    </svg>
+                    <label>S.id/sygbanget</label>
+                </div>
+    </div>
+
+    <div><img id="fotosatu" src="" /><img id="fotodua" src="" /><img id="fototiga" src="" /><img id="fotoempat"
+            src="" /></div>
+
+    <div>
+        <blockquote id='bq'>
+            <p id="kalimat"></p>
+            <p id="text-container"></p>
+            <p id="kalimatc"></p>
+        </blockquote>
+    </div>
+
+    </div>
+
+    <script src="https://feeldreams.github.io/sygbanget/script.js"></script>
+
+    <script>
+        function loadfoto() {
+            wallpaper.src = "https://feeldreams.github.io/pics/citynight.jpg";
+
+            gambar1 = "https://feeldreams.github.io/mikir.gif";
+            gambar2 = "https://feeldreams.github.io/pusn.gif";
+            gambar3 = "https://feeldreams.github.io/pusn2.gif";
+            gambar4 = "https://feeldreams.github.io/pandapanah.gif";
+
+            fotosatu.src = gambar1;
+            fotodua.src = gambar2;
+            fototiga.src = gambar3;
+            fotoempat.src = gambar4;
+        }
+
+        function pergantian() {
+            setTimeout(gantikata, 300); //1
+            setTimeout(gantikata, 1400); //2
+            setTimeout(gantikata, 3100); //3
+            setTimeout(gantikata, 4000); //4
+        }
+
+        async function pertama() {
+            kata1 = "Eeee";
+            kata2 = "Aku.. 🫠";
+            kata3 = "Aku 👉👈";
+            words = ["Mau", "Kok", "Terima", "Ajakan", "Kamu"];
+            emot = "🥰🤭😍😆🫰";
+
+            fotosatu.style = "display:inline-flex";
+            audio.play();
+            showDiv()
+        }
+    </script>
 </body>
+
 </html>
