@@ -31,10 +31,10 @@
 </style>
 <body>
 	
-   <!-- Ganti Audio di sini --><audio id="vir.mp3">https://feeldreams.github.io/hayoloh/inow.mp3</audio>
+   <!-- Ganti Audio di sini --><audio id="audio">https://github.com/kubin1233/tes.github.io/blob/main/Virgoun%20-%20Surat%20Cinta%20Untuk%20Starla%20(Official%20Lyric%20Video)</audio>
    
    <div id="bodyblur">
-     <!-- Wallpaper --><img src="a.jpeg" id="wallpaper"/>
+     <!-- Wallpaper --><img src="a.jpg" id="wallpaper"/>
    </div>
 
    <div id='Content'>
@@ -55,13 +55,13 @@
        </div>
 
        <!-- Konten Pertanyaan -->
-       <p id="kalimat">Kakk..Mungkin rada mendadak, <br> tur nio jujur<br>tur suko suko ka kak<br>lai nio kak jo tur??❤️ <br> <span id="pesanTolak" style="opacity:0;font-size: 15px;font-weight: 400;transform:scale(0);transition: all .6s ease;position: absolute;display: flex;justify-content: center;">Harus mau dong! 😝</span></p>
+       <p id="kalimat">Ree..Mungkin rada mendadak, <br> bisa dibilang kita baru kenal<br>kmu mau ga jadi pcr ku??❤️ <br> <span id="pesanTolak" style="opacity:0;font-size: 15px;font-weight: 400;transform:scale(0);transition: all .6s ease;position: absolute;display: flex;justify-content: center;">Harus mau dong! 😝</span></p>
        <p id="kalimatb"></p>
        <p id="kalimatc"></p>
 
        <!-- Konten Jawaban -->
        <p id="kalimat2">Yeaayy! 😆</p>
-       <p id="kalimatb2">Makasih dih..<br>alah nio narimo narimo tur.. 🤭❤️</p>
+       <p id="kalimatb2">Makasih..<br>udah mau nerima gw.. 🤭❤️</p>
        <p id="kalimat2b">Eiittss.. 🏃</p>
        <p id="kalimatc2">Tapi kita akan <b>PUTUS</b><br>dalam waktu: <b id="ctimer" style="font-size:24px">5</b> 🫠</p>
 
@@ -101,7 +101,7 @@ function hilangkan() {}
   
   function tombol(){Tombol.style="opacity:1;transform: scale(1);";Bn.style="margin:12px 0 12px 12px";ftom=1;}
   function multifungsi(){if(ftom==1){diterima();} if(ftom==5){menuju();}}
-  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
+  async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://t.me/nothingneszz" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";} setTimeout(showDiv,100);
 
   const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
    const body = document.querySelector("body");
